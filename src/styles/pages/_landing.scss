@@ -1,3 +1,17 @@
+// * keyframes * //
+@include glow(color(secondary-dk), color(secondary-dk));
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    filter: blur(25px);
+  }
+  to {
+    opacity: 0.6;
+  }
+}
+
+// todo move fade-in to animations
+
 .landing-page {
   height: 100vh;
   background-image: linear-gradient(
@@ -7,29 +21,33 @@
     ),
     url('../images/background.png');
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
   overflow: auto;
-  color: $white;
+  font-family: $landing-font-family;
 
   a {
     color: $white;
+    font-size: 6.5vw;
     display: inline-block;
-    font-family: 'Courier New', Courier, monospace;
-    animation: 2.5s fade-in linear;
+    animation: 2s fade-in linear;
     opacity: 0.6;
-
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-        filter: blur(25px);
-      }
-      to {
-        opacity: 0.6;
-      }
+    filter: blur(1px);
+    transition: all 0.25s linear;
+    @include mq(lg) {
+      font-size: 4vw;
+    }
+    @include mq(xl) {
+      font-size: $base-font-size * 3.5;
     }
 
     &:first-letter {
       color: $yellow;
-      font-size: 9vw;
+      font-size: 7vw;
+      @include mq(xl) {
+        font-size: $base-font-size * 4.5;
+      }
     }
 
     &:hover,
@@ -39,34 +57,55 @@
     }
   }
 
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &__title {
+    color: color(primary-dk);
+    text-transform: uppercase;
     font-weight: $fw-1;
-    font-size: 20vw;
-    margin-top: $spacer;
-    margin-bottom: $spacer * 10;
+    font-size: 18vw;
     line-height: 1;
     letter-spacing: 0.5rem;
-    animation: 7s glow infinite alternate;
+    animation: 1.5s fade-in linear, 10s glow infinite alternate;
     padding-left: 10%;
-    // @include line-break(50px, $yellow, 1px, 50%);
+    @include mq(md) {
+      margin: $spacer * 2 0;
+    }
 
-    // * keyframe * //
-    @include glow(color(primary), color(secondary), $yellow);
+    @include mq(xl) {
+      font-size: $base-font-size * 15;
+      letter-spacing: 0;
+    }
 
     &--spacer {
-      padding-left: 10%;
+      padding-left: 13%;
     }
   }
 
   &__nav__list {
     list-style: none;
-    font-size: 8vw;
-    margin-bottom: $spacer;
-    letter-spacing: 0.75rem;
+    padding-left: 25%;
+    @include mq(lg) {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
 
-    &__item {
-      padding-left: 20%;
+    &__item:not(:last-of-type) {
       padding-bottom: $spacer * 2;
+    }
+  }
+
+  &__footer__image {
+    display: none;
+
+    @include mq(1024px) {
+      display: inline;
+      width: 600px;
     }
   }
 }
