@@ -1,0 +1,72 @@
+.landing-page {
+  height: 100vh;
+  background-image: linear-gradient(
+      45deg,
+      rgba(color(primary-dk), 0.8),
+      rgba(color(primary-dk), 0.8)
+    ),
+    url('../images/background.png');
+  background-size: cover;
+  overflow: auto;
+  color: $white;
+
+  a {
+    color: $white;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    animation: 2.5s fade-in linear;
+    opacity: 0.6;
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        filter: blur(25px);
+      }
+      to {
+        opacity: 0.6;
+      }
+    }
+
+    &:first-letter {
+      color: $yellow;
+      font-size: 9vw;
+    }
+
+    &:hover,
+    &:active {
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    font-weight: $fw-1;
+    font-size: 20vw;
+    margin-top: $spacer;
+    margin-bottom: $spacer * 10;
+    line-height: 1;
+    letter-spacing: 0.5rem;
+    animation: 7s glow infinite alternate;
+    padding-left: 10%;
+    // @include line-break(50px, $yellow, 1px, 50%);
+
+    // * keyframe * //
+    @include glow(color(primary), color(secondary), $yellow);
+
+    &--spacer {
+      padding-left: 10%;
+    }
+  }
+
+  &__nav__list {
+    list-style: none;
+    font-size: 8vw;
+    margin-bottom: $spacer;
+    letter-spacing: 0.75rem;
+
+    &__item {
+      padding-left: 20%;
+      padding-bottom: $spacer * 2;
+    }
+  }
+}
