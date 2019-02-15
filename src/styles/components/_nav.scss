@@ -5,20 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(45deg, color(dark), $black);
+  background: $white;
   font-size: $base-font-size * 0.9;
 
   &__logo {
     display: none;
-  }
-
-  a {
-    color: $white;
-
-    &:hover,
-    &:active {
-      color: color(accent);
-    }
   }
 
   &__list {

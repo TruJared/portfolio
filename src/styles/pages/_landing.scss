@@ -1,0 +1,21 @@
+.header {
+  height: 100vh;
+  background: linear-gradient(45deg, rgba($white, 0.4), rgba($white, 0.4)),
+    url(../images/header-back.jpg) fixed center/cover;
+  display: flex;
+  flex-direction: column;
+  place-content: flex-start;
+  place-items: center;
+  text-align: center;
+  color: color(dark);
+
+  &__title {
+    padding-top: $spacer * 8;
+    font-size: $base-font-size * 3.5;
+    margin-bottom: $spacer * 2;
+  }
+
+  &__sub {
+    color: grey(4);
+  }
+}
