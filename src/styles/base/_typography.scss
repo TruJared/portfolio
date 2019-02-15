@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Space+Mono');
 
 $base-font-family: 'Space Mono', monospace;
+$heading-font-family: 'Montserrat', sans-serif;
 
 // font-weight
-$fw-1: 400;
-$fw-2: 700;
-// $fw-3: 900;
+$fw-1: 300;
+$fw-2: 400;
+$fw-3: 700;
 
 // font-sizes
 $base-font-size: 1.6rem;
@@ -21,13 +22,36 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   color: color(base-font-color);
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
-h1 h2,
+h1,
+h2,
 h3,
 h4,
 h5 {
-  font-family: $base-font-family;
+  margin: 0;
+  font-family: $heading-font-family;
+}
+
+h1 {
+  font-weight: $fw-1;
+  font-size: $base-font-size * 3.25;
+  margin-bottom: $spacer * 2;
+}
+
+h2 {
+  font-weight: $fw-1;
+  font-size: $base-font-size * 1.5;
+  margin-bottom: $spacer * 2;
+  text-transform: lowercase;
+  text-align: center;
+  line-height: 1.25;
+
+  &::first-letter {
+    font-size: $base-font-size * 1.75;
+    color: color(accent);
+    text-transform: uppercase;
+  }
 }

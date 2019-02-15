@@ -1,34 +1,33 @@
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 50px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(45deg, color(dark), $black);
+  background: color(primary);
   font-size: $base-font-size * 0.9;
 
   &__logo {
-    display: none;
-  }
-
-  a {
-    color: $white;
-
-    &:hover,
-    &:active {
-      color: color(accent);
-    }
+    color: color(secondary);
+    padding-left: $spacer * 2;
+    // display: none;
   }
 
   &__list {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    color: $yellow;
 
-    &__item {
+    &__item a {
+      color: color(secondary);
       padding-right: $spacer * 2;
+
+      &:hover,
+      &:active {
+        color: color(accent);
+      }
     }
   }
 }

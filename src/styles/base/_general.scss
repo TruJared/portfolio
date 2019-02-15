@@ -9,11 +9,12 @@ body {
 a {
   text-decoration: none;
   color: color(secondary);
-}
+  transition: all 0.25s ease-in-out;
 
-a:hover,
-a:active {
-  color: color(accent);
+  &:hover,
+  &:active {
+    color: color(accent);
+  }
 }
 
 ul {

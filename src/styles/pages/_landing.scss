@@ -1,0 +1,48 @@
+.header {
+  height: 100vh;
+  // @include backGrad('../images/header-back.jpg');
+  background: linear-gradient(
+      -45deg,
+      rgba(color(primary), 0.5),
+      rgba(color(primary), 0.5)
+    ),
+    url(../images/header-back.jpg) fixed center/cover;
+  display: flex;
+  flex-direction: column;
+  place-content: flex-start;
+  place-items: center;
+  text-align: center;
+  color: $black;
+  margin-bottom: $spacer * 5;
+
+  &__title {
+    padding-top: $spacer * 8;
+    color: $white;
+  }
+
+  &__sub p {
+    color: $white;
+    text-transform: lowercase;
+    margin: $spacer * 0.9 0;
+  }
+}
+
+.section__landing {
+  text-align: left;
+  // margin-bottom: $spacer * 5;
+  padding: $spacer * 1.5;
+  // padding-bottom: $spacer * 5;
+  display: flex;
+  flex-direction: column;
+
+  &--dk {
+    color: $white;
+    @include backGrad();
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    // margin-bottom: $spacer * 5;
+  }
+}
