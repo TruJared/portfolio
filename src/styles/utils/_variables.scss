@@ -1,23 +1,15 @@
 // named colors
 $white: #fff;
 $black: #000;
-$yellow: #fdf904;
+$yellow: #e7e247;
 
 $palette: (
-  // Main Primary color
-    primary: #332367,
-  primary-lt: #7567a2,
-  primary-dk: #0e042e,
-  // Main Secondary color (1)
-    accent: #4d1d63,
-  accent-lt: #89609d,
-  accent-dk: #1f022d,
-  // Main Secondary color (2)
-    secondary: #213763,
-  secondary-lt: #63779d,
-  secondary-dk: #04122d,
+  primary: #ef5d60,
+  secondary: #254441,
+  accent: #b2085d,
+  dark: #3b413c,
   background: #fff,
-  base-font-color: darken($white, 50%)
+  base-font-color: #424242
 );
 
 $greys: (
