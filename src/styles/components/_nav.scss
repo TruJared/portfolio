@@ -6,11 +6,11 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background: $white;
+  background: color(primary);
   font-size: $base-font-size * 0.9;
 
   &__logo {
-    color: $black;
+    color: color(secondary);
     padding-left: $spacer * 2;
     // display: none;
   }
@@ -21,7 +21,7 @@
     justify-content: flex-end;
 
     &__item a {
-      color: $black;
+      color: color(secondary);
       padding-right: $spacer * 2;
 
       &:hover,

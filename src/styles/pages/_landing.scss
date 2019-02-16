@@ -1,6 +1,12 @@
 .header {
   height: 100vh;
-  @include backGrad('../images/header-back.jpg');
+  // @include backGrad('../images/header-back.jpg');
+  background: linear-gradient(
+      -45deg,
+      rgba(color(primary), 0.5),
+      rgba(color(primary), 0.5)
+    ),
+    url(../images/header-back.jpg) fixed center/cover;
   display: flex;
   flex-direction: column;
   place-content: flex-start;
