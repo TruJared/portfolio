@@ -1,21 +1,42 @@
 .header {
   height: 100vh;
-  background: linear-gradient(45deg, rgba($white, 0.4), rgba($white, 0.4)),
-    url(../images/header-back.jpg) fixed center/cover;
+  @include backGrad('../images/header-back.jpg');
   display: flex;
   flex-direction: column;
   place-content: flex-start;
   place-items: center;
   text-align: center;
-  color: color(dark);
+  color: $black;
+  margin-bottom: $spacer * 5;
 
   &__title {
     padding-top: $spacer * 8;
-    font-size: $base-font-size * 3.5;
-    margin-bottom: $spacer * 2;
+    color: $white;
   }
 
-  &__sub {
-    color: grey(4);
+  &__sub p {
+    color: $white;
+    text-transform: lowercase;
+    margin: $spacer * 0.9 0;
+  }
+}
+
+.section__landing {
+  text-align: left;
+  // margin-bottom: $spacer * 5;
+  padding: $spacer * 1.5;
+  // padding-bottom: $spacer * 5;
+  display: flex;
+  flex-direction: column;
+
+  &--dk {
+    color: $white;
+    @include backGrad();
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__content {
+    // margin-bottom: $spacer * 5;
   }
 }

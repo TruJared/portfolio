@@ -1,0 +1,29 @@
+.button {
+  border: 2px solid $black;
+  color: $black;
+  text-transform: uppercase;
+  padding: $spacer $spacer * 1.5;
+  background: color(background);
+  border-radius: 10px;
+  margin: $spacer * 5;
+  text-align: center;
+  align-self: center;
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+
+  &:hover {
+    color: color(background);
+    background: black;
+  }
+
+  &--dk {
+    border: 2px solid color(background);
+    color: color(background);
+    background: color(secondary);
+
+    &:hover {
+      color: color(secondary);
+      background: color(background);
+    }
+  }
+}

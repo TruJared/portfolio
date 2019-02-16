@@ -1,25 +1,33 @@
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 50px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   background: $white;
   font-size: $base-font-size * 0.9;
 
   &__logo {
-    display: none;
+    color: $black;
+    padding-left: $spacer * 2;
+    // display: none;
   }
 
   &__list {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    color: $yellow;
 
-    &__item {
+    &__item a {
+      color: $black;
       padding-right: $spacer * 2;
+
+      &:hover,
+      &:active {
+        color: color(accent);
+      }
     }
   }
 }
