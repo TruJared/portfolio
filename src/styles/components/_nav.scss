@@ -2,12 +2,16 @@
   position: fixed;
   top: 0;
   height: 50px;
-  display: flex;
+  display: none;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   background: color(primary);
   font-size: $base-font-size * 0.9;
+
+  @include mq(sm) {
+    display: flex;
+  }
 
   &__logo {
     color: color(secondary);

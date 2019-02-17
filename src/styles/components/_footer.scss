@@ -1,0 +1,25 @@
+.footer {
+  background: $black;
+  color: grey(2);
+  padding: $spacer;
+  text-align: center;
+
+  p {
+    margin: 0;
+    padding-top: $spacer;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-top: $spacer;
+    list-style: none;
+    display: flex;
+    place-content: center;
+    align-items: center;
+
+    li:not(:last-of-type) {
+      padding-right: $spacer * 2;
+    }
+  }
+}
