@@ -22,8 +22,8 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   color: color(base-font-color);
-  line-height: 1.5;
-  letter-spacing: 0.03em;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
 }
 
 h1,
@@ -39,18 +39,24 @@ h1 {
   font-weight: $fw-1;
   font-size: $base-font-size * 3.25;
   margin-bottom: $spacer * 2;
+
+  &::first-letter {
+    font-size: $base-font-size * 3.75;
+    color: color(accent);
+    text-transform: uppercase;
+  }
 }
 
 h2 {
   font-weight: $fw-1;
-  font-size: $base-font-size * 1.5;
+  font-size: $base-font-size * 1.75;
   margin-bottom: $spacer * 2;
-  text-transform: lowercase;
+  text-transform: capitalize;
   text-align: center;
   line-height: 1.25;
 
   &::first-letter {
-    font-size: $base-font-size * 1.75;
+    font-size: $base-font-size * 2;
     color: color(accent);
     text-transform: uppercase;
   }

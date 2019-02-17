@@ -51,9 +51,7 @@
   background: linear-gradient(
       -45deg,
       rgba(color(primary), 0.9),
-      rgba(color(primary), 0.8),
-      rgba(color(primary), 0.7),
-      rgba(color(primary), 0.6)
+      rgba(color(primary), 0.9)
     ),
     url($url) fixed center/cover;
 }

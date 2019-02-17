@@ -1,6 +1,5 @@
 .header {
   height: 100vh;
-  // @include backGrad('../images/header-back.jpg');
   background: linear-gradient(
       -45deg,
       rgba(color(primary), 0.5),
@@ -12,8 +11,6 @@
   place-content: flex-start;
   place-items: center;
   text-align: center;
-  color: $black;
-  margin-bottom: $spacer * 5;
 
   &__title {
     padding-top: $spacer * 8;
@@ -29,20 +26,50 @@
 
 .section__landing {
   text-align: left;
-  // margin-bottom: $spacer * 5;
-  padding: $spacer * 1.5;
-  // padding-bottom: $spacer * 5;
+  padding: $spacer * 8 $spacer * 2;
   display: flex;
   flex-direction: column;
+  text-align: center;
+
+  & .button {
+    margin: 0 auto;
+  }
+
+  &--lt h2 {
+    @include line-break(
+      $margin: $spacer * 2 auto 0,
+      $color: linear-gradient(to right, transparent, grey(2)),
+      $width: 80%
+    );
+  }
 
   &--dk {
     color: $white;
-    @include backGrad();
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 
   &__content {
-    // margin-bottom: $spacer * 5;
+    margin-bottom: $spacer * 2;
+  }
+
+  // first section closer to header
+  &__voice {
+    padding-top: $spacer * 5;
+  }
+
+  &__web {
+    @include backGrad('../images/tiger.png');
+  }
+
+  &__about {
+    @include backGrad('../images/background.png');
+    padding-bottom: $spacer * 5;
+    text-align: left;
+
+    &__image {
+      width: 130px;
+      border-radius: 10px;
+      float: left;
+      margin-right: $spacer;
+    }
   }
 }
