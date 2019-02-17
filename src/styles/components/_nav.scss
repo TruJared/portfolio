@@ -8,6 +8,7 @@
   justify-content: space-around;
   background: color(primary);
   font-size: $base-font-size * 0.8;
+  z-index: 999;
   @include mq(xl) {
     padding: 0 $spacer * 2;
   }

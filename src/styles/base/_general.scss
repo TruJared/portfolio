@@ -12,8 +12,9 @@ a {
   transition: all 0.25s ease-in-out;
 
   &:hover,
-  &:active {
-    color: color(accent);
+  &:active,
+  &.current-page {
+    color: color(accent) !important;
   }
 }
 

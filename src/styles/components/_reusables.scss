@@ -14,22 +14,17 @@
 
   &:hover {
     color: color(background);
-    background: color(dark);
+    background: $black;
   }
 
   &--dk {
     border: 2px solid color(background);
     color: color(background);
-    background: color(dark);
+    background: $black;
 
     &:hover {
-      color: color(dark);
+      color: $black;
       background: color(background);
     }
   }
-}
-
-.wrapper {
-  max-width: 999px;
-  margin: 0 auto;
 }

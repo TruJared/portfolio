@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" sizes="16x16 32x32 64x64" href="../images/favicon.ico" />
+  <link rel="stylesheet" href="../styles/main.scss" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+  <title>Jared Makes - Voice</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="./index.html" class="nav__logo">Jared Makes</a>
+    <ul class="nav__list">
+      <li class="nav__list__item"><a href="./web.html">Web</a></li>
+      <li class="nav__list__item"><a href="./voice.html" class="current-page">Voice</a></li>
+      <li class="nav__list__item"><a href="./random.html">Random</a></li>
+      <li class="nav__list__item"><a href="./contact.html">Contact</a></li>
+      <li class="nav__list__item">
+        <a href="./about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+  <header class="header header__pages">
+    <h1 class="header__pages__title">Voice</h1>
+  </header>
+  <section class="section section__pages">
+    <div class="portfolio__entry">
+      <h2 class="portfolio__entry__title">Let's Read</h2>
+       <a href="https://www.amazon.com/gp/product/B07MV521LM?ie=UTF8&ref-suffix=ss_rw" target="_blank" class="portfolio__entry__link"><i class="fas fa-link"></i></a>
+      <iframe width="640" height="564" src="https://player.vimeo.com/video/309763513" frameborder="0" allowFullScreen
+        mozallowfullscreen webkitAllowFullScreen class="portfolio__entry__video"></iframe>
+       <p class="portfolio__entry__description">Using Fry’s list of 1,000 sight words, Let’s Read teaches children how to read through fun interactions. Let’s Read uses
+      positive feedback to keep kids interested and coming back to play again and again. Alexa will display a flash card with
+      the word and even display a count of the correct answers. I hope to see this skill get some use in the class room.</p>
+    </div>
+    <div class="portfolio__entry">
+      <h2 class="portfolio__entry__title">KFC Demo</h2>
+      <iframe width="640" height="564" src="https://player.vimeo.com/video/309762069" frameborder="0" allowFullScreen
+      mozallowfullscreen webkitAllowFullScreen class="portfolio__entry__video"></iframe>
+      <p class="info-text">No link, as this was a demo. Here’s a brief demo video</p>
+      <p class="portfolio__entry__description">I was brought in at the last minute to create demo for this client (3 day turn around). It needed to include a SMS
+      feature, have image and video support and the ability to switch audio output to and from English to Spanish.The SMS was
+      a breeze thanks to Twilio. The language switch worked by creating a variable in the code logic and having separate
+      output responses tied to individual variables. I would have preferred to have one output response that ran through a
+      translation API, but time constraints didn’t allow for that solution. Working under the time pressure, was not the most
+      enjoyable thing I ever did, fortunately, my code was designed from the beginning to allow for rapid changes, so we were
+      able to keep up the momentum.
+      </p>
+    </div>
+    <div class="portfolio__entry">
+      <h2 class="portfolio__entry__title">Clayco</h2>
+            <a href="https://www.amazon.com/gp/product/B07LC4D2LZ?ie=UTF8&ref-suffix=ss_rw" target="_blank"
+              class="portfolio__entry__link"><i class="fas fa-link"></i></a>
+      <img src="../images/clayco.png" alt="clayco logo" class="portfolio__entry__image">
+      <p class="portfolio__entry__description">I was brought in to build an Alexa skill with a very short turn around time (less than one week), with a complex
+      conversation flow. Client also needed image and video support. The biggest challenge was the short turn around and the
+      complicated nature of the conversation flow: Multiple branches that could interact with one another. Fortunately, I have
+      a custom template I use for Alexa skills, which cut the development time down significantly. For the conversation flow,
+      I had to create several controllers to handle various Yes and No responses based on which question the user was saying
+      Yes and No to.
+      </p>
+    </div>
+    <div class="portfolio__entry">
+      <h2 class="portfolio__entry__title">Koffee Kult</h2>
+      <a href="https://www.amazon.com/gp/product/B07LG151N6?ie=UTF8&ref-suffix=ss_rw" target="_blank"
+        class="portfolio__entry__link"><i class="fas fa-link"></i></a>
+      <img src="../images/k-Kult.png" alt="koffee kult logo" class="portfolio__entry__image">
+      <p class="portfolio__entry__description">I was brought in work on the front end of a simple Alexa skill to help market Koffee Kult’s coffee. It needed to be able
+      to collect data and email users one time use coupons. To be honest, this was pretty cut and dry for me. There were no
+      particular challenges with the front end outside of ensuring the responses fulfilled for the correct criteria (i.e.
+      notifications on or off, allows email on or off, received coupon on or off, etc…). I did have some extra time to help
+      with a little bit of the back end logic, and worked on an issue with users being able to get multiple coupon codes by
+      uninstalling an reinstalling the skill. I enjoyed this project quite a bit.
+      </p>
+    </div>
+        <div class="portfolio__entry">
+          <h2 class="portfolio__entry__title">Your Happiness Now</h2>
+          <a href="https://www.amazon.com/gp/product/B07JY8DBY3?ie=UTF8&ref-suffix=ss_rw" target="_blank"
+            class="portfolio__entry__link"><i class="fas fa-link"></i></a>
+            <img src="../images/groupsmileSmall.jpg" alt="a group of people stand in a circle and smile" class="portfolio__entry__image">
+            <p class="info-text">Also available <a href="https://assistant.google.com/services/a/uid/000000c54c38fa03?hl=en&source=web" target="_blank">on Google Assistant</a>.</p>
+            <p class="portfolio__entry__description">Client requested an Alexa version of her already exiting iPhone app and also wanted to promote her new book. The app was
+              not ideally designed for the voice space. Incorporating audio assets without them feeling forced, was also a bit tricky.
+              I resigned the flow of the app to work in voice. I used Alexa to “introduce” the author to the listener and let her
+              share her thoughts through audio files. I’m really happy with the audio incorporation within this skill. At the time, I
+              feel it was a really unique way of handling the client request. (note: this was created when Amazon had more strict
+              requirements on audio files; client did not update their audio yet, so it may sound a bit “tinny” on Alexa).
+          </p>
+        </div>
+  </section>
+  <footer class="footer">
+    <p>
+      Created By
+      <a href="#">Jared Truscott</a> &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      <ul class="footer__social-links">
+        <li>
+          <a href="http://github.com/trujared" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-github-alt"></i></a>
+        </li>
+        <li>
+          <a href="http://codepen.io/jaredspens" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-codepen"></i></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/trujared" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="http://instagram.com/trujared" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+    </p>
+  </footer>
+  <script src="../javascripts/index.js"></script>
+</body>
+
+</html>

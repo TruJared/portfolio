@@ -1,0 +1,79 @@
+.header__pages {
+  display: flex;
+  flex-direction: column;
+  place-content: flex-start;
+  place-items: center;
+
+  &__title {
+    margin: $spacer * 8 0 $spacer * 4;
+    color: $black;
+    text-align: center;
+
+    @include line-break(
+      $margin: 0 auto,
+      $color: linear-gradient(to right, transparent, grey(2)),
+      $width: 100%
+    );
+
+    @include mq(xl) {
+      @include line-break(
+        $margin: $spacer * 2 auto 0,
+        $color: linear-gradient(to right, transparent, grey(2)),
+        $width: 60%
+      );
+    }
+  }
+}
+
+.portfolio__entry {
+  margin: 0 auto $spacer * 3;
+  max-width: map-get($breakpoints, xl);
+  padding: 0 $spacer * 2;
+
+  &__title {
+    display: inline-block;
+  }
+  text-align: left;
+  position: relative;
+
+  &__link {
+    position: absolute;
+    padding-left: 5px;
+    @include mq(md) {
+      position: relative;
+    }
+  }
+
+  & sub {
+    display: block;
+  }
+
+  &__video,
+  &__image {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+  }
+
+  &__video {
+    margin: -150px 0;
+    @media only screen and (max-width: map-get($breakpoints , md)) {
+      height: auto;
+      margin: 0;
+      margin-bottom: $spacer;
+    }
+  }
+
+  &__description {
+    margin-bottom: $spacer * 5;
+  }
+}
+
+.info-text {
+  font-size: $base-font-size * 0.85;
+  line-height: 1.15;
+  padding: 0;
+
+  color: grey(2);
+  font-style: italic;
+}

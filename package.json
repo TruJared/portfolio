@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/views/landing.html",
-    "build": "parcel build ./src/views/landing.html"
+    "dev": "parcel ./src/views/voice.html",
+    "build": "parcel build ./src/views/index.html"
   },
   "keywords": [],
   "author": "",
