@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/views/voice.html",
+    "dev": "parcel ./src/views/index.html",
     "build": "parcel build ./src/views/index.html"
   },
   "keywords": [],

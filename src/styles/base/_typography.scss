@@ -74,3 +74,14 @@ h2 {
     text-transform: uppercase;
   }
 }
+
+h3 {
+  font-size: $base-font-size * 1.25;
+  text-transform: lowercase;
+  margin: $spacer 0;
+}
+
+h4 {
+  font-weight: $fw-1;
+  font-style: italic;
+}
