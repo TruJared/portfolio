@@ -11,10 +11,17 @@
   place-content: flex-start;
   place-items: center;
   text-align: center;
+  padding: 0 10px;
 
   &__title {
-    padding-top: $spacer * 8;
+    margin-top: $spacer * 8;
     color: $white;
+    // background: linear-gradient(45deg, rgba(color(primary), 0.1), transparent);
+    // padding: 5px 20px;
+    // border-radius: 25px;
+
+    @include mq(xl) {
+    }
   }
 
   &__sub p {
@@ -41,6 +48,14 @@
       $color: linear-gradient(to right, transparent, grey(2)),
       $width: 80%
     );
+
+    @include mq(xl) {
+      @include line-break(
+        $margin: $spacer * 2 auto 0,
+        $color: linear-gradient(to right, transparent, grey(2)),
+        $width: 60%
+      );
+    }
   }
 
   &--dk {
@@ -48,7 +63,8 @@
   }
 
   &__content {
-    margin-bottom: $spacer * 2;
+    margin: 0 auto $spacer * 3;
+    max-width: map-get($breakpoints, xxl);
   }
 
   // first section closer to header
@@ -58,6 +74,12 @@
 
   &__web {
     @include backGrad('../images/tiger.png');
+
+    @include mq(lg) {
+      @include backGrad('../images/logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 
   &__about {
@@ -70,6 +92,7 @@
       border-radius: 10px;
       float: left;
       margin-right: $spacer;
+      box-shadow: 0 0 5px rgba($white, 0.3);
     }
   }
 }

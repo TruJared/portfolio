@@ -16,6 +16,10 @@ $base-font-size: 1.6rem;
 // set html to 10px to create base 10
 html {
   font-size: 10px;
+
+  @include mq(md) {
+    font-size: 12px;
+  }
 }
 
 body {
@@ -24,6 +28,15 @@ body {
   color: color(base-font-color);
   line-height: 1.6;
   letter-spacing: 0.04em;
+
+  @include mq(md) {
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+  }
+  @include mq(xl) {
+    line-height: 2;
+    letter-spacing: 0.025em;
+  }
 }
 
 h1,

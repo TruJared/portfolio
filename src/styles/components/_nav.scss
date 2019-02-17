@@ -2,21 +2,24 @@
   position: fixed;
   top: 0;
   height: 50px;
-  display: none;
+  display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: color(primary);
-  font-size: $base-font-size * 0.9;
-
-  @include mq(sm) {
-    display: flex;
+  font-size: $base-font-size * 0.8;
+  @include mq(xl) {
+    padding: 0 $spacer * 2;
   }
 
   &__logo {
     color: color(secondary);
     padding-left: $spacer * 2;
-    // display: none;
+    display: none;
+
+    @include mq(sm) {
+      display: inline-block;
+    }
   }
 
   &__list {
