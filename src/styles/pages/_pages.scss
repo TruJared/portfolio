@@ -81,3 +81,16 @@
 .big-image {
   max-width: 750px;
 }
+
+.about-page {
+  text-align: center;
+
+  &__image {
+    margin: $spacer * 1.5 0;
+    box-shadow: 0 0 10px rgba($black, 0.2);
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

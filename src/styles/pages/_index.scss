@@ -5,7 +5,9 @@
       rgba(color(primary), 0.5),
       rgba(color(primary), 0.5)
     ),
-    url(../images/header-back.jpg) fixed center/cover;
+    url(../images/header-back.jpg);
+  background-size: cover;
+  background-position: center, center;
   display: flex;
   flex-direction: column;
   place-content: flex-start;
@@ -67,9 +69,9 @@
   }
 
   &__web {
-    @include backGrad('../images/tiger.png');
+    @include backGrad('../images/background.png ');
 
-    @include mq(lg) {
+    @include mq(md) {
       @include backGrad('../images/logo.png');
       background-size: auto;
       background-repeat: no-repeat;
