@@ -1,4 +1,4 @@
-const { $, $$ } = require('./lib/bling');
+const { $ } = require('./lib/bling');
 
 // change nav color on scroll
 window.onscroll = function changeClass() {
@@ -9,3 +9,11 @@ window.onscroll = function changeClass() {
     $('.nav').classList.remove('nav-change-color');
   }
 };
+
+// mobile nav animations
+$('.mobile-nav__toggler').on('click', () => {
+  $('.mobile-nav').style.width = $('.mobile-nav').style.width === '100vw' ? 0 : '100vw';
+  $('.mobile-nav__toggler--icon').style.transform = $('.mobile-nav__toggler--icon').style.transform === 'rotate(-360deg)'
+    ? 'rotate(0)'
+    : 'rotate(-360deg)';
+});
