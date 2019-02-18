@@ -8,9 +8,15 @@
   justify-content: space-around;
   background: color(primary);
   font-size: $base-font-size * 0.8;
+  transition: all 1s ease-in-out;
   z-index: 999;
+
   @include mq(xl) {
     padding: 0 $spacer * 2;
+  }
+
+  &-change-color {
+    background: color(background);
   }
 
   &__logo {
