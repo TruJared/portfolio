@@ -65,33 +65,38 @@
     <header class="header header__pages">
       <h1 class="header__pages__title">Contact</h1>
     </header>
-    <section class="section section__pages">
-      <div class="portfolio__entry" style="text-align: center">
-        <!-- ! remove inline sytling on this page -->
 
-        <p class="portfolio__entry__description">
-          This page is still progressing. Currently you can contact me at
-          <a href="mailto:jared@jaredmakes.com">jared@jaredmakes.com</a>.
-        </p>
+    <div class="wrapper wrapper__contact">
+    <section class="section section__pages">
+      <div class="portfolio__entry">
+        <!-- form -->
+        <form name="Contact Form - Jared Makes" method="post" class="contact-form" data-netlify="true">
+          <div class="contact-form__item contact-form__name">
+            <label for="name"></label>
+            <input type="text" placeholder="Name: " name="user_name">
+          </div>
+          <div class="contact-form__item contact-form__email">
+            <label for="email"></label>
+            <input type="email"  placeholder="E-mail: " name="user_email">
+          </div>
+          <div class="contact-form__item contact-form__message">
+            <label for="message"></label>
+            <textarea  name="user_message" placeholder="Message:"></textarea>
+              <button type="submit" class="button contact-form__button">Send it</button>
+          </div>
+        </form>
       </div>
+
     </section>
-    <!-- <footer class="footer">
+    <footer class="footer fixed-footer">
     <p>
       Created By
       <a href="#">Jared Truscott</a> &copy;
       <script>
         document.write(new Date().getFullYear());
-      </script> -->
-    <!-- ! remove this div -->
-    <!-- ! remove inline sytling on this page -->
-
-    <div
-      class="flex-wrap"
-      style="display:flex; place-content: center; place-items: center"
-    >
+      </script>
       <ul
         class="footer__social-links"
-        style="display: flex; place-content: space-around; place-items: center; width: 250px; "
       >
         <li>
           <a
@@ -126,9 +131,10 @@
           ></a>
         </li>
       </ul>
-    </div>
-    <!-- </p>
-  </footer> -->
+    </p>
+  </footer>
+          </div>
+
     <script src="../javascripts/app.js"></script>
   </body>
 </html>

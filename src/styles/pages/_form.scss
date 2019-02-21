@@ -1,0 +1,47 @@
+// todo convert to sass //
+// todo make look nice //
+
+.wrapper__contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+form {
+  margin: -50px auto 0;
+  max-width: 600px;
+  padding: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: $spacer * 0.5 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid grey(2);
+  padding: 10px $spacer * 0.5 5px $spacer * 0.5;
+  transition: all 0.25s linear;
+}
+
+textarea {
+  vertical-align: bottom;
+  height: 250px;
+  border: 1px solid grey(2);
+  margin-top: $spacer;
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(grey(1), 0.2);
+}
+
+.contact-form__button {
+  margin: $spacer * 4 0 $spacer * 2;
+}
