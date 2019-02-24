@@ -17,6 +17,18 @@
     background: $black;
   }
 
+  &--fall {
+    transition: all 0.5s cubic-bezier(1, -0.2, 0.85, 0.64);
+    // transform-origin: top left;
+    // can use percentages or pixels
+    // example transform-origin: 50% 50%; === transform-origin: center;
+    transform-origin: 25% 80%;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
   &--dk {
     border: 2px solid color(background);
     color: color(background);
